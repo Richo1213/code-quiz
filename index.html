@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Space Quiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+  <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body style="background-image: url(https://wallpapercave.com/wp/vQlyhcu.jpg); opacity: 80%;">
+
+  <div class="container mt-4 col-md">
+    <h1 style="color:black;">Soccer world!</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-4 mt-4">
+           <button onClick="startQuiz()" class="float-center" style="color:greenyellow">Start Quiz</button>
+           <button onClick="finishQuiz(event)" class="float-center" style="color:blueviolet">End Quiz</button>
+           <button onClick="location = location['href']" class="float-center" style="color:yellowgreen">Restart</button></div>
+        <div class="col-6 col-sm-4 mt-4"><p class="card-text" style='color: white' id='highScoreBox'></p> </div>
+    
+ 
+        <div class="w-100 d-none d-md-block"></div>
+    
+        <div class="col-6 col-sm-4 mt-4" style="color: white;">Timer: <h3 id='countdown'></h3></div>
+        <div class="col-6 col-sm-4 mt-4"> <button onClick="clearHigh(event)">Clear High Scores</button></div>
+      </div>
+    </div>
+    <div id='quiz' class="col-10 col-sm-6 card mb-3">
+      <form id="questionBox" class="card-body">
+      </form>
+    </div>
+    <div id='endPage' class="col-10 col-sm-6 card d-none">
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
